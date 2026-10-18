@@ -22,7 +22,7 @@ async def claude_3_call(prompt: str, latencia: float = 0.8) -> str:
     return f"[claude-3] respuesta a: {prompt}"
 
 
-async def local_llama_call(prompt: str, latencia: float = 0.5) -> str:
+async def local_llama_call(prompt: str, latencia: float = 1.4) -> str:
     await asyncio.sleep(latencia)
     return f"[local-llama] respuesta a: {prompt}"
 
